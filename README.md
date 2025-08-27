@@ -1,5 +1,5 @@
 
-# minecraft-bedrock-server-autoupdater
+# Minecraft Bedrock Server Installer and Auto Updater
 
 ## Installation & Usage
 
@@ -13,7 +13,7 @@ sudo ./install.sh
 
 This will:
 - Create a dedicated `minecraft` user
-- Install all scripts to `/opt/minecraft-bedrock-server`
+- Install all scripts in `/opt/minecraft-bedrock-server`
 - Set up the systemd service
 - Schedule weekly updates via cron
 
@@ -25,7 +25,7 @@ To perform a fresh install (or update to the latest version):
 sudo ./install_minecraft.sh
 ```
 
-This will run the update script and install the latest Bedrock server files.
+This will run the update script and install the latest Minecraft Bedrock server files.
 
 ### 3. Starting and Stopping the Server
 
@@ -44,10 +44,10 @@ Check server status:
 sudo systemctl status minecraft
 ```
 
+
 ### 4. Automatic Updates
 
-The server will auto-update every Monday at 3am via cron, using the `update_bedrock.sh` script.
+The server will automatically update every Monday at 3am via cron, using the `update_bedrock.sh` script.
 
----
 
-All scripts and the server run as the dedicated `minecraft` user for security.
+All scripts and the server run as the dedicated `minecraft` user for improved security.
